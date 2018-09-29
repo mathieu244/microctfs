@@ -3,7 +3,7 @@
   remote_user: eversec
   tasks:
     - name: Clone microctfs
-      raw: git clone https://github.com/gabemarshall/microctfs.git
+      raw: git clone https://github.com/mathieu244/microctfs.git
  
     - name: Build geddy challenge
       raw: docker build -t geddy /home/eversec/microctfs/geddy/
