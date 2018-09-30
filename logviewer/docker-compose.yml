@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  logviewer:
+    build: ./
+    ports:
+      - "9011:80"
