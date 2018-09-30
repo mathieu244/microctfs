@@ -2,6 +2,7 @@ FROM dockerfiles/centos-lamp
 MAINTAINER Gabe Marshall <gabemarshall@me.com>
 RUN yum -y update
 RUN yum -y install unzip nodejs npm sudo
+RUN npm config set strict-ssl false
 RUN useradd evrs
 RUN echo 'evrs:@pplekfkljsdfkj' | chpasswd
 RUN usermod -a -G wheel evrs
