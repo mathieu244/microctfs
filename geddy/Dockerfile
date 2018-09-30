@@ -7,6 +7,7 @@ MAINTAINER Gabe Marshall <gabemarshall@me.com>
 
 RUN apt-get -yqq --force-yes update --fix-missing
 RUN apt-get -yqq --force-yes install npm wget curl
+RUN npm config set strict-ssl false
 RUN npm cache clean -f
 RUN npm install -g n
 RUN n stable
