@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  geddy:
+    build: ./
+    ports:
+      - "9044:80"
