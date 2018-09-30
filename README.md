@@ -4,6 +4,11 @@ Small CTF challenges running on Docker
 ## logviewer
 
 #### Build and Start logviewer challenge exposed on port 8000
+Change docker ssh password on boot
+```
+echo 'printf("mdp\nmdp\n") | sudo passwd docker' > /var/lib/boot2docker/profile
+```
+
 Add to boot2docker
 
 ```
