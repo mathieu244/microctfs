@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  geddy:
+  geddy_chal:
     build: ./
     ports:
       - "9044:80"
