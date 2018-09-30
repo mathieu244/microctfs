@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  sqli:
+    build: ./
+ #   volumes:
+ #      - "./www:/var/www/html"
+    ports:
+      - "9022:80"
