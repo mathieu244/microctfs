@@ -22,7 +22,9 @@ RUN npm install -g geddy@13.0.7
 RUN echo 'nice_job_submit_the_hash_for_points:8ed2abafebafd16dcc1ab05e06199a39f7170a08' >> /etc/passwd
 USER deployme
 WORKDIR /home/deployme/
- 
+
+# La commande geddy app est depricated, valider ca commande suivante
+#RUN geddy gen app
 RUN geddy app eversec
 ADD run.sh ./
 CMD ["./run.sh"]
