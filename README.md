@@ -4,6 +4,11 @@ Small CTF challenges running on Docker
 ## logviewer
 
 #### Build and Start logviewer challenge exposed on port 8000
+Add to boot2docker
+
+```
+ cd /tmp && git clone https://github.com/mathieu244/microctfs.git &&  mv microctfs/* /var/lib/boot2docker/opt/
+```
 
 ```
 cd logviewer
