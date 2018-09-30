@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  xxe_chal:
+    build: ./
+    ports:
+      - "9099:8080"
