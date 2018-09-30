@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  tcmanager_chal:
+    build: ./
+    ports:
+      - "9033:80"
