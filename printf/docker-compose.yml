@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  printf_chal:
+    build: ./
+    ports:
+      - "9055:80"
