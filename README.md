@@ -9,10 +9,18 @@ Change docker ssh password on boot
 echo 'printf("mdp\nmdp\n") | sudo passwd docker' > /var/lib/boot2docker/profile
 ```
 
-Add to boot2docker
+Challenge Add to boot2docker (change all flags after deploy)
 
 ```
  cd /tmp && git clone https://github.com/mathieu244/microctfs.git &&  mv microctfs/* /var/lib/boot2docker/opt/
+```
+
+Add plugin:
+
+ajouter les plugins désirer de ce repo un par un: https://github.com/CTFd/plugins
+
+```
+cd /var/lib/boot2docker/CTFd/plugins && git clone https://github.com/CTFd/CTFd-Docker.git
 ```
 
 ```
